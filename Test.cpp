@@ -36,9 +36,9 @@ TEST_CASE("Good input") {
 
     CHECK(nospaces(mat(5, 7, '-', ',')) == nospaces("-----\n-,,,-\n-,-,-\n-,-,-\n-,-,-\n-,,,-\n-----"));
 
-    CHECK(nospaces(mat(3, 1, '3', '1')) == nospaces("333\n313\n333"));
+    CHECK(nospaces(mat(3, 3, '3', '1')) == nospaces("333\n313\n333"));
 
-    CHECK(nospaces(mat(1, 10, '+', '$')) == nospaces("+\n+\n+\n+\n+\n+\n+\n+\n+\n+"));
+    CHECK(nospaces(mat(1, 11, '+', '$')) == nospaces("+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+"));
 
     CHECK(nospaces(mat(5, 3, 'a', 'b')) == nospaces("aaaaa\nabbba\naaaaa"));
 
