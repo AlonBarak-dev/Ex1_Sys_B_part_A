@@ -58,6 +58,17 @@ namespace ariel {
         string res_string;
         string buttom_half;
         string line;
+
+        if (col == 1)
+        {
+            for (int i = 0; i < row; i++)
+            {
+                res_string.push_back(c1);
+            }
+            return res_string;
+        }
+        
+
         int times = 0;
         for (int i = 0; i < (row / 2 + 1); i++)
         {
@@ -97,7 +108,7 @@ namespace ariel {
 // int main(){
 
 
-//     cout << ariel::mat(1,1,'-',',') << endl;
+//     cout << ariel::mat(15,1,'-',',') << endl;
 
 //     return 0;
 // }
